@@ -11,17 +11,28 @@
     </ContentPage.Background>
 
     <ContentPage.Content>
-
         <StackLayout>
             <Label Text="Login"
-                       FontSize="70"
-                       HorizontalOptions="CenterAndExpand"
-                       TextColor="White"
-                       
+                   HorizontalOptions="CenterAndExpand"
+                   TextColor="White"
+                   TextTransform="Uppercase"
+                   FontSize="70"                           
+                   HorizontalTextAlignment="Center"
+                   Margin="0,15,0,0"  
+                   Opacity="0.7"
                     />
-            <Frame CornerRadius="10" x:Name="frm_dados" HeightRequest="100">
 
+            <Frame CornerRadius="10"
+                   x:Name="frm_login"
+                   HasShadow="False"
+                   >
+                <Label Text="Email:"/>
+                <Entry x:Name="txt_email" TextColor="White" Placeholder="Digite seu email" />
 
+                <Label Text="Senha:"/>
+                <Entry x:Name="txt_senha" TextColor="White" Placeholder="Digite sua senha"/>
+
+                <Button Text="Entrar" Clicked="btn_entrar" BorderColor="Transparent" CornerRadius="15"/>
             </Frame>
         </StackLayout>
     </ContentPage.Content>
