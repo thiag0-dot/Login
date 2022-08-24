@@ -11,19 +11,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Model\DadosUsuario.cs" />
+    <Compile Remove="Model\DadosUsuario.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Model\DadosUsuario.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="View\conectado.xaml">
+    <EmbeddedResource Update="View\login.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\login.xaml">
+    <EmbeddedResource Update="View\protegida.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

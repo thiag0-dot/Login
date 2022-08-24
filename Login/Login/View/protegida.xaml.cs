@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace Login.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class conectado : ContentPage
+    public partial class protegida : ContentPage
     {
-        public conectado()
+        public protegida()
         {
             InitializeComponent();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }
