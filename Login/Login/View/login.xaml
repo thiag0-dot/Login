@@ -26,13 +26,15 @@
                    x:Name="frm_login"
                    HasShadow="False"
                    >
-                <Label Text="Email:"/>
-                <Entry x:Name="txt_email" TextColor="White" Placeholder="Digite seu email" />
+                <StackLayout>
+                    <Label Text="Email:"/>
+                    <Entry x:Name="txt_email" TextColor="White" Placeholder="Digite seu email" />
 
-                <Label Text="Senha:"/>
-                <Entry x:Name="txt_senha" TextColor="White" Placeholder="Digite sua senha"/>
+                    <Label Text="Senha:"/>
+                    <Entry x:Name="txt_senha" TextColor="White" Placeholder="Digite sua senha"/>
 
-                <Button Text="Entrar" Clicked="btn_entrar" BorderColor="Transparent" CornerRadius="15"/>
+                    <Button Text="Entrar" Clicked="Button_Clicked" BorderColor="#1ae871" TextColor="#1ae871"  CornerRadius="15"/>
+                </StackLayout>
             </Frame>
         </StackLayout>
     </ContentPage.Content>
