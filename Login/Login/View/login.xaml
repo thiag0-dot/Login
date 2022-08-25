@@ -18,22 +18,25 @@
                    TextTransform="Uppercase"
                    FontSize="70"                           
                    HorizontalTextAlignment="Center"
-                   Margin="0,15,0,0"  
-                   Opacity="0.7"
+                   Margin="0,160,0,0"  
+                   
                     />
 
             <Frame CornerRadius="10"
                    x:Name="frm_login"
                    HasShadow="False"
+                   Margin="0,20,0,0"
+                   HeightRequest="250"
+                   BackgroundColor="#ffff" 
+                   
                    >
                 <StackLayout>
-                    <Label Text="Email:"/>
-                    <Entry x:Name="txt_email" TextColor="White" Placeholder="Digite seu email" />
+                    <Label Text="Email:" TextColor="Black" Opacity="0.7"/>
+                    <Entry x:Name="txt_email" TextColor="White" Placeholder="Insira seu Email:" />
+                    <Label Text="Senha:" TextColor="Black" Opacity="0.7"/>
+                    <Entry x:Name="txt_senha" TextColor="White" Placeholder="Insira a sua senha:"/>
 
-                    <Label Text="Senha:"/>
-                    <Entry x:Name="txt_senha" TextColor="White" Placeholder="Digite sua senha"/>
-
-                    <Button Text="Entrar" Clicked="Button_Clicked" BorderColor="#1ae871" TextColor="#1ae871"  CornerRadius="15"/>
+                    <Button Text="Entrar" Clicked="Button_Clicked" BorderColor="#1f7df0" TextColor="#1f7df0"  CornerRadius="15" Margin="0,25,0,0"/>
                 </StackLayout>
             </Frame>
         </StackLayout>
