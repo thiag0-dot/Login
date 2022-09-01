@@ -10,7 +10,7 @@ namespace Login
 {
     public partial class App : Application
     {
-        public List<Dados> list_usuarios = new List<Dados>
+        public static List<Dados> list_usuarios = new List<Dados>
         {
             new Dados()
             {
@@ -26,6 +26,8 @@ namespace Login
                 senha = "1234"
             }
         };
+
+
         public App()
         {
             InitializeComponent();

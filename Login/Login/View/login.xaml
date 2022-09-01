@@ -32,7 +32,7 @@
                    >
                 <StackLayout>
                     <Label Text="Email:" TextColor="Black" Opacity="0.7"/>
-                    <Entry x:Name="txt_email" TextColor="Black" Placeholder="Insira seu Email:" />
+                    <Entry x:Name="txt_email" TextColor="Black" Placeholder="Insira seu Email:"  />
                     <Label Text="Senha:" TextColor="Black" Opacity="0.7"/>
                     <Entry x:Name="txt_senha" TextColor="Black" Placeholder="Insira a sua senha:"/>
 

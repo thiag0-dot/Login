@@ -12,12 +12,9 @@ namespace Login.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class login : ContentPage
     {
-        App PropriedadesApp;
-
         public login()
         {
             InitializeComponent();
-            PropriedadesApp = (App)Application.Current;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -27,7 +24,7 @@ namespace Login.View
                 string email = txt_email.Text;
                 string senha = txt_senha.Text;
 
-                if (PropriedadesApp.list_usuarios.Any(i => (i.Email == email && i.senha == senha)))
+                if (App.list_usuarios.Any(i => (i.Email == email && i.senha == senha)))
                 {
                     App.Current.Properties.Add("usuario_logado", email);
                     App.Current.MainPage = new protegida();

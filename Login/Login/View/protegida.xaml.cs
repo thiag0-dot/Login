@@ -13,22 +13,25 @@ namespace Login.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class protegida : ContentPage
     {
-        App PropriedadesApp;
+        
         public protegida()
         {
             InitializeComponent();
 
             Set_Boas_Vindas();
-            PropriedadesApp = (App)Application.Current;
+
+           
         }
 
         private void Set_Boas_Vindas()
         {
-            string email_login = PropriedadesApp.Properties["usuario_logado"].ToString();
+            string email_login = Application.Current.Properties["usuario_logado"].ToString();
 
-            Dados usuario_logado = PropriedadesApp.list_usuarios.FirstOrDefault(i => i.Email == email_login);
+            Dados usuario_logado = App.list_usuarios.FirstOrDefault(i => i.Email == email_login);
 
-            lbl_boasvindas.Text = "Bem-vindo (a) " + usuario_logado.Nome;
+            string nome = usuario_logado.Nome;
+
+            lbl_boasvindas.Text = $"Bem-vindo (a): {nome}" ;
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

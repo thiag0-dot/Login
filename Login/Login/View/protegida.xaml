@@ -13,18 +13,24 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Frame CornerRadius="10"
-                   x:Name="frm_dados"
-                   VerticalOptions="CenterAndExpand">
+            <StackLayout>
+                <Label x:Name="lbl_boasvindas"
+                       TextColor="White"
+                       FontSize="50"                           
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="Center"
+                />
 
-                <StackLayout>
-                    <Label x:Name="lbl_boasvindas"/>
+                <Button Text="Desconectar" 
+                        Clicked="Button_Clicked" 
+                        BorderWidth="2" CornerRadius="10"
+                        TextColor="white" 
+                        BorderColor="White"
+                        FontSize="30"  
+                        Margin="0,100,0,25"
+                />
 
-                    <Button Text="Desconectar" Clicked="Button_Clicked" />
-                        
-                </StackLayout>
-                
-            </Frame>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
     
